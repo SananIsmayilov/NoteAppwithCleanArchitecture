@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/maincolor"
+    tools:context=".presentation.insertnote.InsertNote">
+
+
+    <ImageButton
+        android:id="@+id/backbutton"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/cardback"
+        android:backgroundTint="#3B3B3B"
+        android:src="@drawable/backbutton"
+        android:tint="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UseAppTint" />
+
+
+    <ImageButton
+        android:id="@+id/savebutton"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/cardback"
+        android:backgroundTint="#3B3B3B"
+        android:src="@drawable/savebutton"
+        android:tint="@color/white"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UseAppTint" />
+
+    <EditText
+        android:id="@+id/notetittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="@color/maincolor"
+        android:hint="Başlıq"
+        android:letterSpacing="0.1"
+        android:textColor="@color/white"
+        android:textColorHint="#9A9A9A"
+        android:textSize="30sp"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/notecontent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="@color/maincolor"
+        android:hint="Notunuz..."
+        android:letterSpacing="0.1"
+        android:textColor="@color/white"
+        android:textColorHint="#9A9A9A"
+        android:textFontWeight="@integer/material_motion_duration_medium_2"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toLeftOf="@id/notetittle"
+        app:layout_constraintTop_toBottomOf="@id/notetittle" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
